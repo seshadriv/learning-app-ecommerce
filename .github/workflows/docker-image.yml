@@ -31,7 +31,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
     
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag ${{ vars.DOCKERHUB_USERNAME }}/ecom-web:v1 
+      run: docker build . --file Dockerfile --tag ${{ vars.DOCKERHUB_USERNAME }}/ecom-web:v2 
 
     - name: Docker Push to DockerHub
       uses: docker/build-push-action@v4
